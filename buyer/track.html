@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Status Tracker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    .status-tracker {
+      text-align: center;
+      color: #333;
+    }
+
+    .status-tracker h2 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+
+    .status-steps {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 1.5rem;
+    }
+
+    .step {
+      text-align: center;
+      color: #999;
+    }
+
+    .step .icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #999;
+    }
+
+    .step.completed .icon {
+      border-color: #4CAF50;
+      color: #4CAF50;
+    }
+
+    .step .label {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .step.completed .label {
+      color: #4CAF50;
+    }
+
+    .cancel-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #ff4d4d; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cancel-button:hover {
+      background-color: #ff1a1a; 
+    }
+  </style>
+</head>
+<body>
+  <div class="status-tracker">
+    <h2>STATUS ORDER</h2>
+    <div class="status-steps">
+      <div class="step completed">
+        <div class="icon">&#x1F4DD;</div> 
+        <span class="label">Order Placed</span>
+      </div>
+      <div class="step completed">
+        <div class="icon">&#x1F6D2;</div> 
+        <span class="label">In Process</span>
+      </div>
+      <div class="step completed">
+        <div class="icon">&#x1F4B3;</div> 
+        <span class="label">Payment</span>
+      </div>
+      <div class="step">
+        <div class="icon">&#x1F69A;</div> 
+        <span class="label">Shipped</span>
+      </div>
+      <div class="step">
+        <div class="icon">&#x1F4CD;</div> 
+        <span class="label">Delivered</span>
+      </div>
+    </div>
+    <a href="cancel.php">
+    <button class="cancel-button">Cancel Order</button>
+  </a>
+  </div>
+</body>
+</html>
+
+

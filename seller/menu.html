@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Custom styles for the navbar */
+        body {
+            background-color: #f8f9fa; /* Light background for the body */
+        }
+        .navbar-custom {
+            background-color: #343a40; /* Dark background color for the navbar */
+            padding: 10px 20px; /* Padding for the navbar */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+        .navbar-custom .btn {
+            border-radius: 20px; /* Rounded corners for buttons */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Custom blue for primary buttons */
+            border: none; /* Remove border */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .btn-danger {
+            background-color: #dc3545; /* Custom red for danger button */
+            border: none; /* Remove border */
+        }
+        .btn-danger:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar-custom d-flex justify-content-between">
+        <div class="d-flex gap-4">
+            <a href="home.php">
+                <button class="btn btn-primary">Add Product</button>
+            </a>
+
+            <a href="view.php">
+                <button class="btn btn-primary">View Product</button>
+            </a>
+
+            <a href="home.php">
+                <button class="btn btn-primary">View Orders</button>
+            </a>
+        </div>
+        <a href="../shared/logout.php">
+            <button class="btn btn-danger">Logout</button>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-1r8c3itW5UrbQDi0TOxZKlzZTH6MnY3KnQl0AsGZP5mbtEIE6mEwvFjYOMIc5zV7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-3m9hxXgPPLP0zx1hFbXH7H9H2G7YGLd3Sev+2D/AW/wM2wJQcABk1FjAakbtxg/2" crossorigin="anonymous"></script>
+</body>
+</html>
